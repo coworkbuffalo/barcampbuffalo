@@ -4,7 +4,10 @@ Quick little Rails app for BarCampBuffalo 2012.
 
 ## Setup
 
-*Note:* Requires PostgreSQL.
+Requires rbenv and PostgreSQL. For the homebrewers out there:
+
+    brew install rbenv
+    brew install postgresql
 
 Run the following:
 
@@ -18,4 +21,4 @@ Open it up!
 
 ## License
 
-MIT! See `LICENSE`.
+See `MIT-LICENSE`.
