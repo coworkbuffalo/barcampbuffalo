@@ -1,0 +1,18 @@
+development:
+  adapter: postgresql
+  database: barcamp_development
+  host: localhost
+  pool: 5
+  timeout: 5000
+
+test: &TEST
+  adapter: postgresql
+  database: barcamp_test
+  host: localhost
+  min_messages: warning
+  pool: 5
+  timeout: 5000
+
+production:
+  adapter: postgresql
+  database: barcamp_production
