@@ -1,5 +1,7 @@
 @import "reset";
 
+$width: 770px;
+
 body {
   font-family: 'Helvetica', 'Arial', sans-serif;
   background-color: #FAFAFA;
@@ -54,7 +56,7 @@ ul {
       text-indent: -9999px;
       margin: 10px auto 5px auto;
       background: url('/assets/new_logo.png') no-repeat 50%;
-      width: 770px;
+      width: $width;
       height: 163px;
       display: block;
     }
@@ -70,7 +72,7 @@ ul {
   ul {
     padding: 10px 5px;
     list-style-type: none;
-    width: 770px;
+    width: $width;
     margin: 0 auto;
     text-align: center;
 
@@ -114,7 +116,8 @@ ul {
 }
 
 #footer {
-  width: 500px;
+  width: $width;
+  text-align: center;
   margin: 20px auto;
   font-size: 10px;
   color: #666;
