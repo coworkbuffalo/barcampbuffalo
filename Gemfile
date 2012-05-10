@@ -11,4 +11,5 @@ gem 'pg'
 group :assets do
   gem 'coffee-rails', github: 'rails/coffee-rails', branch: '3-2-stable'
   gem 'sass-rails',   github: 'rails/sass-rails',   branch: '3-2-stable'
+  gem 'uglifier'
 end
