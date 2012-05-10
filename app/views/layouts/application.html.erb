@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Barcamp</title>
+  <title>Barcamp Buffalo</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div id="top">
+    <h1><a href="#">Barcamp Buffalo</a></h1>
+  </div>
 
-<%= yield %>
+  <div id="nav">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/register">Register</a></li>
+      <li><a href="/attendees">Attendees</a></li>
+      <li><a href="http://maps.google.com/maps/ms?msa=0&amp;msid=206245297805510026235.0004bfa4c9b9a4784613f&amp;ie=UTF8&amp;t=m&amp;ll=42.881876,-78.877287&amp;spn=0.011006,0.031972&amp;z=15&amp;source=embed">Directions</a></li>
+      <li><a href="/pages/slides">Slides</a></li>
+      <li><a href="http://barcamp.org/BarCampBuffalo">Wiki</a></li>
+    </ul>
+  </div>
 
+  <div id="content">
+    <h1>BarCamp Buffalo</h1>
+    <h3>Buffalo's Tech Unconference</h3>
+
+    <%= yield %>
+  </div>
+
+  <div id="footer">
+    This site is <a href="http://github.com/coworkbuffalo/barcampbuffalo">open source</a>. Thanks to <a href="http://barcamproc.org">BarCamp Rochester</a> for letting us borrow their styles!
+  </div>
 </body>
 </html>
