@@ -1,0 +1,24 @@
+<p>
+  Ready to sign up for BarCamp? Awesome!
+</p>
+
+<%= form_for @registration do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :email, "Email address" %>
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :twitter, "Twitter handle" %>
+    <%= f.text_field :twitter %>
+  </p>
+  <p>
+    <%= f.label :topic, "Talk topic" %>
+    <%= f.text_field :topic %>
+  </p>
+
+  <button>Sign up</button>
+<% end %>
