@@ -12,4 +12,13 @@ class Registration < ActiveRecord::Base
   def twitter_handle
     %<@#{twitter.gsub(/^@/, '')}>
   end
+
+  def display_name
+    first, last = name.split(" ", 2)
+    if last
+      "#{first} #{last.first}."
+    else
+      first
+    end
+  end
 end

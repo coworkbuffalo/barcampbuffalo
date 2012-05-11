@@ -1,0 +1,7 @@
+<p>
+  Need to edit your personal info or talk title? No problem:
+</p>
+
+<%= form_for @registration, url: registration_path(@registration.key) do |form| %>
+  <%= render "form", form: form %>
+<% end %>

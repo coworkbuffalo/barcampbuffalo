@@ -6,25 +6,6 @@
   Not sure what BarCamp is or what's involved in speaking? We've got a <%= link_to "guide", page_path("info") %> to help you out.
 </p>
 
-<%= form_for @registration do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :email, "Email address" %>
-    <%= f.text_field :email %>
-  </p>
-  <p>
-    <%= f.label :twitter, "Twitter handle" %>
-    <%= f.text_field :twitter %>
-  </p>
-  <p>
-    <%= f.label :topic, "Talk topic" %>
-    <%= f.text_field :topic %>
-  </p>
-
-  <button>Sign up</button>
+<%= form_for @registration do |form| %>
+  <%= render "form", form: form %>
 <% end %>
