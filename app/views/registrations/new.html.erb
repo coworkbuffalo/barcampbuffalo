@@ -1,8 +1,14 @@
 <p>
-  Ready to sign up for BarCamp? Awesome!
+  Ready to sign up for BarCamp? Great! Even if you're not speaking, please register to attend.
+</p>
+
+<p>
+  Not sure what BarCamp is or what's involved in speaking? We've got a <%= link_to "guide", page_path("info") %> to help you out.
 </p>
 
 <%= form_for @registration do |f| %>
+  <%= f.error_messages %>
+
   <p>
     <%= f.label :name %>
     <%= f.text_field :name %>

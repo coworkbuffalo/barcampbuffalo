@@ -1,0 +1,28 @@
+<p>
+  Here's the list of attendees for BarCampBuffalo 5. Check out <%= link_to "what BarCamp is", page_path("info") %>, or <%= link_to "register to attend", new_registration_path %> if you haven't yet!
+</p>
+
+<h2>BarCampBuffalo 5 Attendees</h2>
+
+<ul class="attendees">
+<% @registrations.each do |registration| %>
+  <li class="attendee">
+    <div class="attendee_topic">
+      <% if registration.topic.present? %>
+        <%= registration.topic %>
+      <% else %>
+        <span class="notyet">No topic yet</span>
+      <% end %>
+    </div>
+    <div class="attendee_name">
+      <%= registration.name %>
+    </div>
+    <% if registration.twitter? %>
+      <div class="attendee_twitter">
+        <%= link_to registration.twitter_handle, "https://twitter.com/#{registration.twitter_handle}" %>
+      </div>
+    <% end %>
+    <div style="clear: both;"></div>
+  </li>
+<% end %>
+</ul>

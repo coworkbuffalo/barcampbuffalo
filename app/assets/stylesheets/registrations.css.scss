@@ -27,3 +27,72 @@
     font-size: 25px;
   }
 }
+
+
+#errorExplanation {
+  border: 2px solid #CC6666;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-left: 35px;
+  margin-right: 55px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    margin: 0px;
+    background-color: #CC6666;
+    color: white;
+    float: none;
+    margin-bottom: 10px;
+  }
+
+  p {
+    display: none;
+  }
+
+  ul {
+    margin: 2px 24px;
+
+    li {
+      padding: 3px;
+    }
+  }
+}
+
+
+.attendees {
+  margin-top: 1em;
+  list-style: none;
+
+  li {
+    border-top: 1px solid #CCC;
+    height: 40px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin: 0;
+
+    .notyet {
+      color: #CCC;
+    }
+
+    .attendee_twitter {
+      font-size: 14px;
+      margin-left: 10px;
+    }
+
+    .attendee_name {
+      font-size: 18px;
+    }
+
+    .attendee_topic {
+      float: right;
+      font-weight: bold; 
+      font-size: 20px;
+      width: 500px;
+      text-align: right;
+    }
+  }
+}

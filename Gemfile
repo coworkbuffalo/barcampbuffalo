@@ -5,6 +5,7 @@ ruby '1.9.3'
 gem 'rails', '3.2.3'
 
 gem 'bourbon'
+gem 'dynamic_form'
 gem 'high_voltage'
 gem 'jquery-rails'
 gem 'pg'

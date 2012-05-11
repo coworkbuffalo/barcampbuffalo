@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120510024134) do
+ActiveRecord::Schema.define(:version => 20120511001744) do
 
   create_table "registrations", :force => true do |t|
     t.string   "key"
@@ -22,5 +22,9 @@ ActiveRecord::Schema.define(:version => 20120510024134) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  add_index "registrations", ["email"], :name => "index_registrations_on_email"
+  add_index "registrations", ["name"], :name => "index_registrations_on_name"
+  add_index "registrations", ["twitter"], :name => "index_registrations_on_twitter"
 
 end
