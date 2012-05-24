@@ -6,7 +6,8 @@
 
 <ul class="attendees">
 <% @registrations.each do |registration| %>
-  <li class="attendee">
+  <li class="attendee" style="background: url('http://api.twitter.com/1/users/profile_image?screen_name=<%= registration.twitter_image_handle %>') no-repeat">
+
     <div class="attendee_topic">
       <% if registration.topic.present? %>
         <%= registration.topic %>
