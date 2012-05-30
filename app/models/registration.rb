@@ -5,7 +5,7 @@ class Registration < ActiveRecord::Base
   validates_uniqueness_of :twitter, allow_nil: true, allow_blank: true
   validates_presence_of :name, :email
   validates_format_of :email, with: %r/.+\@.+\..+/
-  validates_format_of :twitter, with: %r/\A[A-Za-z0-9]+\Z/
+  validates_format_of :twitter, with: %r/\A[A-Za-z0-9_]+\Z/
 
   before_create do
     self.key = SecureRandom.hex(32)
