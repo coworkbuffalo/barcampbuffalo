@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby-local-exec
+#!/usr/bin/env ruby
 require 'pathname'
 ENV['BUNDLE_GEMFILE'] ||= File.expand_path("../../Gemfile",
   Pathname.new(__FILE__).realpath)

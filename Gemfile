@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '1.9.3'
 
-gem 'rails', '3.2.3'
+gem 'rails', '~> 3.2.11'
 
 gem 'bourbon'
 gem 'dynamic_form'
@@ -18,4 +18,6 @@ end
 
 group :development do
   gem 'heroku'
+  gem 'taps'
+  gem 'sqlite3'
 end

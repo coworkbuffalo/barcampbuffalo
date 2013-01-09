@@ -11,7 +11,7 @@ Requires rbenv and PostgreSQL. For the homebrewers out there:
 
 Run the following:
 
-    rbenv install 1.9.3-p194
+    rbenv install 1.9.3-p327
     ln -s ~/Dev/barcampbuffalo ~/.pow/barcampbuffalo
     ./script/setup
 
