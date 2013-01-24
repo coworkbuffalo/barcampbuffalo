@@ -16,5 +16,9 @@
   <%= form.label :topic, "Talk topic" %>
   <%= form.text_field :topic %>
 </p>
+<p>
+  <%= form.label :tshirt_size, "T-Shirt Size" %>
+  <%= form.select :tshirt_size, Registration::TSHIRT_SIZES, include_blank: true %>
+</p>
 
 <button>Sign up</button>
