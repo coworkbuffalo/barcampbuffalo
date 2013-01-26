@@ -1,5 +1,5 @@
 desc "Send reminders to everyone"
-task :remind do
+task :remind => :environment do
   Registration.all.each do |registration|
     Notifier.reminder(registration).deliver
   end
