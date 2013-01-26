@@ -18,7 +18,7 @@ class Registration < ActiveRecord::Base
   validates_uniqueness_of :twitter, allow_nil: true, allow_blank: true
   validates_presence_of :name, :email
   validates_format_of :email, with: %r/.+\@.+\..+/
-  validates_format_of :twitter, with: %r/\A[A-Za-z0-9_]+\Z/, allow_nil: true, allow_blank: true
+  validates_format_of :twitter, with: %r/\A@?[A-Za-z0-9_]+\Z/, allow_nil: true, allow_blank: true
   validates_inclusion_of :tshirt_size, in: TSHIRT_SIZES, message: "is missing, please pick a t-shirt size!"
 
   before_create do
