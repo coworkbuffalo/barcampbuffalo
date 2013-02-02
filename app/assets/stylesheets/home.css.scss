@@ -30,13 +30,13 @@ table {
     border: 1px solid #ffffff;
   }
 
-  $table-width: 123px;
+  $table-width: 110px;
   td, th {
     vertical-align: middle;
     min-width: $table-width;
     width: $table-width;
     border: 1px solid #000000;
-    padding: 20px 0;
+    padding: 20px 6px;
     text-align: center;
   }
 
