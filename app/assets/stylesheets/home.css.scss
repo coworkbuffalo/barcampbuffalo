@@ -2,6 +2,11 @@ h2 {
   margin-bottom: 1em;
 }
 
+h3 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 #gMap {
   margin-bottom: 1em;
 }
@@ -14,6 +19,29 @@ h2 {
     display: inline-block;
     vertical-align: middle;
     width: 150px;
+  }
+}
+
+table {
+  tr td:first-child {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #001848;
+    border: 1px solid #ffffff;
+  }
+
+  $table-width: 123px;
+  td, th {
+    vertical-align: middle;
+    min-width: $table-width;
+    width: $table-width;
+    border: 1px solid #000000;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  th {
+    background-color: #F0A800;
   }
 }
 
