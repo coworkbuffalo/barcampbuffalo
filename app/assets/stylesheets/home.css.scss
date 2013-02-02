@@ -30,11 +30,8 @@ table {
     border: 1px solid #ffffff;
   }
 
-  $table-width: 110px;
   td, th {
     vertical-align: middle;
-    min-width: $table-width;
-    width: $table-width;
     border: 1px solid #000000;
     padding: 20px 6px;
     text-align: center;
@@ -43,5 +40,17 @@ table {
   th {
     background-color: #F0A800;
   }
+}
+
+$before-width: 111px;
+#before td, th {
+  min-width: $before-width;
+  width: $before-width;
+}
+
+$after-width: 68px;
+#after td, th {
+  min-width: $after-width;
+  width: $after-width;
 }
 
