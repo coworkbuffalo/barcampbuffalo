@@ -5,6 +5,7 @@ class Registration < ActiveRecord::Base
     "Men's Large",
     "Men's X-Large",
     "Men's XX-Large",
+    "Men's XXX-Large",    
     "Women's Small",
     "Women's Medium",
     "Women's Large",
