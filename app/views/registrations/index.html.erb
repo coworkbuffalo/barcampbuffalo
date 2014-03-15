@@ -6,7 +6,7 @@
 
 <ul class="attendees">
 <% @registrations.each do |registration| %>
-  <li class="attendee" style="background: url('http://api.twitter.com/1/users/profile_image?screen_name=<%= registration.twitter_image_handle %>') no-repeat">
+  <li class="attendee" style="background: url('http://www.gravatar.com/avatar/<%= registration.gravatar_hash %>?s=48&d=retro') no-repeat">
 
     <div class="attendee_topic">
       <% if registration.topic.present? %>

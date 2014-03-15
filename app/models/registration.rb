@@ -30,12 +30,8 @@ class Registration < ActiveRecord::Base
     %<@#{twitter.gsub(/^@/, '')}>
   end
 
-  def twitter_image_handle
-    if twitter?
-      twitter_handle
-    else
-      "barcampbuffalo"
-    end
+  def gravatar_hash
+    Digest::MD5.hexdigest(email.strip.downcase)
   end
 
   def display_name
